@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<h:outputStylesheet library="css" name="style.css" />
+	<title><ui:insert name="titulo" /></title>
+</h:head>
+<h:body>
+	<div id="cabecalho">
+		<h:graphicImage library="img" name="logoEtec.png" id="logoEscola" />
+
+		<div id="usuarioLogado">
+
+			<h:outputText rendered="#{not empty loginBean.usuario.login}"
+				value="Logado como:  #{loginBean.usuario.login}" />
+		</div>
+
+	</div>
+	
+	<div id="conteudo">
+		<ui:insert name="corpo" />
+
+	</div>
+	<div id="rodape">&copy;Copyright 2018. Todos os direitos
+		reservados a Hor&aacute;cio Augusto.</div>
+</h:body>
+</html>

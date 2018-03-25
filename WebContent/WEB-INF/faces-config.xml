@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+
+ <!-- navigation-rule para index.xhtml -->
+     <navigation-rule>
+        <display-name>/paginas/admin/unidadeAutarquia.xhtml</display-name>
+        <from-view-id>/paginas/admin/unidadeAutarquia.xhtml</from-view-id>
+     
+    </navigation-rule> 
+</faces-config>
